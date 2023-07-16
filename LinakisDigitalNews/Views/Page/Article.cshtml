@@ -5,7 +5,7 @@
     @foreach (var article in Model.Articles)
     {
         <li>
-            <p><a href="@article.Url">@article.Title</a>(<i>@article.SourceName</i>,@article.PublicationDate.Value.ToString("dd/MM"))</p>
+            <p><a target="_blank" href="@article.Url">@article.Title</a>(<i>@article.SourceName</i>,@article.PublicationDate.Value.ToString("dd/MM"))</p>
         </li>
     }
 </ul>
