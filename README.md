@@ -11,8 +11,8 @@ Before running the program, make sure you have the following:
 ## Getting Started
 To run the application, follow these steps:
 
-1. Install Docker on your machine.
-2. Create a Docker image using the provided `docker-compose` file located in the root directory. This can be done using a CLI.
+1. Install Docker and docker-compose on your machine.
+2. Run `docker-compose up` from the root directory. This can be done using a CLI.
 3. Open Visual Studio and run the application.
 
 ## Technologies Used
