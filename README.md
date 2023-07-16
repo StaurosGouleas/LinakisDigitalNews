@@ -18,7 +18,7 @@ To run the application, follow these steps:
 ## Technologies Used
 The LinakisDigitalNews application utilizes the following technologies:
 
-- Microsoft SQL Server
+- Microsoft SQL Server 2022
 - .NET Framework 4.7.2
 - EntityFramework 6
 - ASP.NET
