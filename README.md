@@ -23,5 +23,3 @@ The LinakisDigitalNews application utilizes the following technologies:
 - EntityFramework 6
 - ASP.NET
 - MVC
-
-Feel free to explore the code and make any modifications as needed.
