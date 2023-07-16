@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linakis Digital News</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-light bg-primary navbar-fixed-top" style="background-color: #e3f2fd;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/Home/Index">                
+                    <img src="~/Images/linakis_logo.svg" width="50" height="50" />
+                </a>                
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Technology", "Article","Page", new { pageTitle="Technology" },null)</li>
+                    <li>@Html.ActionLink("Business", "Article", "Page", new { pageTitle = "Business" }, null)</li>
+                    <li>@Html.ActionLink("Entertainment", "Article", "Page", new { pageTitle = "Entertainment" }, null)</li>
+                    <li>@Html.ActionLink("Miscellaneous", "Article", "Page", new { pageTitle = "Miscellaneous" }, null)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Linakis Digital News</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

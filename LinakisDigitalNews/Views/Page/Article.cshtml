@@ -1,0 +1,12 @@
+﻿@model LinakisDigitalNews.Models.Page
+
+<h2>@Model.Title Articles</h2>
+<ul>
+    @foreach (var article in Model.Articles)
+    {
+        <li>
+            <p><a href="@article.Url">@article.Title</a>(<i>@article.SourceName</i>,@article.PublicationDate.Value.ToString("dd/MM"))</p>
+        </li>
+    }
+</ul>
+
